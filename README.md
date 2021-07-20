@@ -1,8 +1,9 @@
-# Overview: Beamable SDK Examples
+# Overview: Beamable Steamworks Examples
 
-This example project demonstrates small, functional code snippets of specific [Beamable](https://beamable.com/) features and services. It is *not* a complete, sample project game.
+This example project demonstrates a [Beamable](https://beamable.com/) project with [Steamworks](https://partner.steamgames.com/) integration. It is *not* a complete, sample project game.
 
-**Included** are examples for many Beamable features and services. However, the [Beamable Microservices Examples](https://github.com/beamable/Beamable_Microservices_Examples) repo is available separately.
+**Documentation**
+* `Guide` - [Integrating Steamworks into Beamable](https://docs.beamable.com/docs/integrating-steamworks)
 
 **Project Configuration**
 * `Unity Target` - Standalone MAC/PC
@@ -16,7 +17,6 @@ This example project demonstrates small, functional code snippets of specific [B
 * `client/Assets/` - Core files of the project
 * `client/Assets/3rdParty/` - Dependency asset files for the project
 * `client/Assets/Examples/` - Contains one **Scene** per feature. Open in the Unity Editor to play the game!
-
 
 
 **Beamable SDK**
