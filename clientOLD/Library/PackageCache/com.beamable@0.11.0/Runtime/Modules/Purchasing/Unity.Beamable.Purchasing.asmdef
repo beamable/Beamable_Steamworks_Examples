@@ -1,0 +1,22 @@
+{
+    "name": "Unity.Beamable.Purchasing",
+    "references": [
+        "Beamable.ConsoleCommands",
+        "Beamable.Coroutines",
+        "Beamable.Platform",
+        "Beamable.Service",
+        "Beamable.Spew",
+        "Unity.Beamable.Runtime.Common",
+        "UnityEngine.Purchasing"
+    ],
+    "optionalUnityReferences": [],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [
+        "UNITY_PURCHASING"
+    ]
+}

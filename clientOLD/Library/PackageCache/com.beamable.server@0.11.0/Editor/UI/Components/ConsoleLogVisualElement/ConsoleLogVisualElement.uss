@@ -1,0 +1,10 @@
+#mainVisualElement{
+    flex-direction: row;
+
+}
+
+#statusIcon{
+    height: 25px;
+    width: 25px;
+    background-image: resource("Packages/com.beamable.server/Editor/UI/Icons/info.png");
+}

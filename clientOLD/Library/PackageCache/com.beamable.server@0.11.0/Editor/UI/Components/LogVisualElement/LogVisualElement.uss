@@ -1,0 +1,296 @@
+LogVisualElement > TemplateContainer> #mainVisualElement{
+    flex-grow: 1;
+    min-width: 500px;
+    align-content: center;
+    border-radius: 5px;
+    border-width: 2px;
+    background-color: #282828;
+}
+
+#logHeader{
+    flex-direction: row;
+    flex-grow: 1;
+    background-color: #000000;
+    padding-bottom: 5px;
+    
+}
+.leftArea{
+    justify-content: center;
+    padding-left: 5px;
+    flex-direction: row;
+    padding-top: 5px;
+}
+.rightArea{
+    padding-right: 15px;
+    flex-grow: 1;
+    flex-direction: row;
+    align-self: flex-end;
+    align-content: flex-end;
+    justify-content: flex-end;
+}
+
+.subTitle{
+    justify-content: center;
+    -unity-text-align: middle-left;
+}
+
+#statusIcon{
+     /*background-image: resource("Packages/com.beamable.server/Editor/UI/Icons/Local Running L.png");*/
+     width: 25px;
+     height: 25px;
+    
+ }
+#remoteStatusIcon{
+    width: 25px;
+    height: 25px;   
+}
+.localBuilding {
+    background-image: resource("Packages/com.beamable.server/Editor/UI/Icons/local Building L.png");
+}
+
+.localRunning {
+    /*background-color: #36b131;*/
+    background-image: resource("Packages/com.beamable.server/Editor/UI/Icons/Local Running L.png");
+}
+
+.localStopped{
+    background-image: resource("Packages/com.beamable.server/Editor/UI/Icons/Local Stopped L.png");
+}
+
+.remoteRunning{
+    background-image: resource("Packages/com.beamable.server/Editor/UI/Icons/Remote Running L.png");
+}
+.remoteStopped{
+    background-image: resource("Packages/com.beamable.server/Editor/UI/Icons/Remote Stopped L.png");
+}
+
+.different{
+    background-image: resource("Packages/com.beamable.server/Editor/UI/Icons/different L.png");
+}
+
+.remoteDeploying{
+    background-image: resource("Packages/com.beamable.server/Editor/UI/Icons/Remote Deploying L.png");
+}
+
+
+
+#checkbox{
+    background-color:#0091FF;
+    align-self: center;
+    height: 15px;
+    width: 15px;
+    justify-content: center;
+}
+
+#SubTitle{
+    padding-top: 5px;
+    flex-direction: row;
+}
+
+.squareBtn{
+    border-color: #DCDCDC;
+    height: 30px;
+    width: 30px;
+    position: relative;
+    align-items: center;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    border-left-width: 1px;
+    border-right-width: 1px;
+    border-top-width: 1px;
+    border-bottom-width: 1px;
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    background-image: none;
+    cursor: pan;
+    background-color: #383838;
+    border-radius: 0px;
+}
+
+.title{
+    font-size: 12px;
+    -unity-font: url("project:///Packages/com.beamable/Editor/UI/Font/Lato-Semibold.ttf");
+    -unity-text-align: middle-center;
+    margin-right: 2px;
+    margin-left: 5px;
+    -unity-font-style: bold;
+}
+
+#log{
+    left: 5px;
+    
+}
+
+#clear{
+    border-color: #DCDCDC;
+    height: 30px;
+    width: 45px;
+    position: relative;
+    /*align-items: center;*/
+    right: 5px;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    border-left-width: 1px;
+    border-right-width: 2px;
+    border-top-width: 1px;
+    border-bottom-width: 1px;
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    background-image: none;
+    cursor: pan;
+    background-color: #383838;
+    border-radius: 0px;
+}
+
+#popupBtn{
+    right: -5px;
+    background-image: resource("Packages/com.beamable.server/Editor/UI/Icons/popup.png");
+    background-color: #383838;
+}
+#advanceBtn{
+    right: -5px;
+    background-image: resource("Packages/com.beamable.server/Editor/UI/Icons/advance.png");
+    background-color: #383838;
+}
+
+
+#logWindowHeader{
+    flex-direction: row;
+    padding-top: 5px;
+}
+#detailWindow{
+    /*background-color: #373737;*/
+    min-height: 50px;
+    margin-left: 5px;
+    margin-right: 5px;
+    top:-6px;
+    border-bottom-width: 1px;
+    border-left-width: 1px;
+    border-top-width: .5px;
+    border-right-width: 1px;
+    border-color: #DCDCDC;
+}
+
+#white{
+    right: 10px;
+    padding-right: -15px;
+    border-bottom-width: 1px;
+    border-left-width: 0px;
+    border-top-width: 1px;
+    border-right-width: 1px;
+    border-color: #DCDCDC;
+}
+
+#clearContainer{
+    padding-top: 0px;
+    border-bottom-width: 1px;
+    border-left-width: 1px;
+    border-top-width: 1px;
+    border-right-width: 0px;
+    border-color: #DCDCDC;
+    left: 10px;
+    
+}
+
+
+
+#error{
+    background-image: resource("Packages/com.beamable.server/Editor/UI/Icons/error.png");
+    border-left-width: 2px;
+    
+}
+#warning{
+    background-image: resource("Packages/com.beamable.server/Editor/UI/Icons/warning.png");
+}
+#debug{
+    background-image: resource("Packages/com.beamable.server/Editor/UI/Icons/debug.png");
+}
+#info{
+    background-image: resource("Packages/com.beamable.server/Editor/UI/Icons/info.png");
+}
+
+#logWindowBody{
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    /*border-bottom-width: 1px;*/
+    /*border-left-width: 1px;*/
+    /*border-top-width: 1px;*/
+    /*border-right-width: 1px;*/
+    /*border-color: #FFFFFF;*/
+}
+
+#logText{
+    min-height: 100px;
+    
+}
+
+#buttonRow{
+    align-content: flex-end;
+    padding-top: 10px;
+    padding-right: 10px;
+    flex-direction: row;
+    padding-bottom: 10px;
+    justify-content: flex-end;
+    
+}
+
+#buildDropDown{
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+
+#dropDown{
+    align-content: center;
+    justify-content: center;
+    align-self: center;
+    width: 18px;
+    height: 10px;
+    background-image: resource("Packages/com.beamable/Editor/UI/Content/Icons/dropdown Close.png");
+    -unity-text-align: middle-center;
+}
+
+
+.confirmBtn{
+    border-bottom-width: 1px;
+    border-left-width: 1px;
+    border-top-width: 1px;
+    border-right-width: 1px;
+    border-color: #DCDCDC;
+    border-radius: 5px;
+    background-image: none;
+    width: 100px;
+    background-color: #383838;
+    height: 28px;
+    cursor: pan;
+    background-image: none;
+}
+#logListRoot{
+    min-height: 100px;
+    margin-left: 5px;
+    margin-right: 5px;
+    top:-6px;
+    border-bottom-width: 0px;
+    border-left-width: 1px;
+    border-top-width: 1px;
+    border-right-width: 1px;
+    border-color: #DCDCDC;
+    
+}
+ListView{
+    flex-grow: 1;
+}
+
+ListView ConsoleLogVisualElement:selected {
+    background-color: rgb(58, 127, 214);
+}

@@ -1,0 +1,15 @@
+.subBuildBtn{
+    height: 25px;
+    border-bottom-width: 1px;
+    border-left-width: 1px;
+    border-top-width: 1px;
+    border-right-width: 1px;
+    border-color: #DCDCDC;
+    background-image: none;
+    font-size: 10px;
+    border-radius: 0px;
+    background-color: #383838;
+}
+#withDebug{
+    top: -3px;
+}

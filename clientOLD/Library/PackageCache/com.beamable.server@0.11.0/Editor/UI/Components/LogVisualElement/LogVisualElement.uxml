@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<engine:UXML
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns:engine="UnityEngine.Experimental.UIElements"
+        xsi:noNamespaceSchemaLocation="../UIElementsSchema/UIElements.xsd"
+        xmlns:beamable="Beamable.Editor.Microservice.UI.Components"
+        xsi:schemaLocation="UnityEngine.Experimental.UIElements ../UIElementsSchema/UnityEngine.Experimental.UIElements.xsd">
+    
+
+    <engine:VisualElement name="mainVisualElement">
+        <engine:VisualElement name="logHeader">
+            <engine:VisualElement class="leftArea">
+                <engine:Foldout class="foldout"/>
+                <engine:TextField name="microserviceTitle" class="title" text="ANGIE'S TEST"/>
+<!--                <engine:Label class="title" name="microserviceTitle" text="ANGIE'S TEST"/>-->
+            </engine:VisualElement>
+            <engine:VisualElement class="rightArea">
+                <engine:VisualElement name="remoteStatusIcon"/>
+                <engine:Label name="remoteStatusTitle" class="subTitle"/>
+                <engine:VisualElement name="statusIcon"/>
+                <engine:Label name="statusTitle" class="subTitle"/>
+                <engine:VisualElement name="checkbox"/>
+            </engine:VisualElement>
+        </engine:VisualElement>
+        
+<!--        <beamable:LoadingBarVisualElement/>-->
+        
+        <engine:VisualElement name="SubTitle">
+            <engine:Label text="LOG" name="log" class="title"/>
+            <engine:VisualElement class="rightArea">
+                <engine:Button name="popupBtn" class="squareBtn"/>
+                <engine:Button name="advanceBtn" class="squareBtn"/>
+            </engine:VisualElement>
+        </engine:VisualElement>
+        
+        <engine:VisualElement name="logWindow">
+            <engine:VisualElement name="logWindowHeader">
+                <engine:VisualElement class="leftArea" name="clearContainer" >
+                    <engine:Button name="clear" text="clear"/>
+                </engine:VisualElement>
+                <engine:VisualElement class="rightArea" name="white">
+                    <engine:Button name="error" class="squareBtn"/>
+                    <engine:Button name="warning" class="squareBtn"/>
+                    <engine:Button name="info" class="squareBtn"/>
+                    <engine:Button name="debug" class="squareBtn"/>
+                </engine:VisualElement>
+            </engine:VisualElement>
+            <engine:VisualElement name="logWindowBody">
+<!--               <engine:TextField name="logText"/>-->
+                <engine:VisualElement name="logListRoot"/>
+                <engine:VisualElement name ="detailWindow"/>
+            </engine:VisualElement>
+        </engine:VisualElement>
+        
+        <engine:VisualElement name="buttonRow">
+             <engine:Button name="forceRebuild" text="Force Rebuild" class="confirmBtn"/>
+            <engine:Button name="start" text="Start" class="confirmBtn"/>
+            <engine:Button name="buildDropDown" class="confirmBtn">
+                <engine:Image name="dropDown"/>
+               <engine:Label text="Build" name="buildLabel"/>
+            </engine:Button>
+        </engine:VisualElement>
+        
+    </engine:VisualElement>
+
+</engine:UXML>
