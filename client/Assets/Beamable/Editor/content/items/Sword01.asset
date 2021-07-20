@@ -14,8 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tags: []
   icon:
-    m_AssetGUID: 
-    m_SubObjectName: 
-    m_SubObjectType: 
+    m_AssetGUID: eb4a3584174c96641bc4d5b8f1f5d213
+    m_SubObjectName: icon
+    m_SubObjectType: UnityEngine.Sprite, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
   clientPermission:
-    writeSelf: 0
+    writeSelf: 1

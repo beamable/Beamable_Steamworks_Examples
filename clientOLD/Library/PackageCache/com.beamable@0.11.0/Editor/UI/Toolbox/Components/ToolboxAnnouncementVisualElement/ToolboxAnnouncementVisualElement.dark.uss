@@ -1,7 +1,0 @@
-ToolboxAnnouncementVisualElement.info {
-    background-color: rgba(134, 255, 134, .1);
-}
-#action {
-    padding-top: 3px;
-    padding-bottom: 3px;
-}

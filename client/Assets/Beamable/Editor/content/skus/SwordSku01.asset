@@ -23,7 +23,7 @@ MonoBehaviour:
       HasValue: 1
       Value: the.sword.googleplay
     steam:
-      HasValue: 0
-      Value: 0
+      HasValue: 1
+      Value: 1
     googleplay_legacy: 
     itunes_legacy: 
