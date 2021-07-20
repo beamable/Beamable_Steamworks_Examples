@@ -3,7 +3,6 @@
 This example project demonstrates a [Beamable](https://beamable.com/) project with [Steamworks](https://partner.steamgames.com/) integration. It is *not* a complete, sample project game.
 
 **Documentation**
-* `Main` - [docs.beamable.com](https://docs.beamable.com/)
 * `Guide` - [Integrating Steamworks into Beamable](https://docs.beamable.com/docs/integrating-steamworks)
 
 **Project Configuration**
