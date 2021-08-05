@@ -14,7 +14,8 @@ namespace Beamable.Examples.Integrations.Steamworks
             Debug.Log($"Start() Instructions...\n" + 
                       " * Complete steps: https://docs.beamable.com/docs/integrating-steamworks\n" + 
                       " * Run The Scene\n" +
-                      " * See Unity Console Window for success\n");
+                      " * See Unity Console Window for success\n" + 
+                      " * See an error? Repeat these steps\n");
 
             SetupBeamable();
         }
