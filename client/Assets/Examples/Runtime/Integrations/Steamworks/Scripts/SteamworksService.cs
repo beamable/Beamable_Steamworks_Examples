@@ -12,6 +12,7 @@ namespace Beamable.Examples.Integrations.Steamworks
     /// Service for <see cref="Steamworks"/>.
     /// </summary>
     public class SteamworksService : ISteamService
+    {
  
         //  Fields  ---------------------------------------
         private bool _transactionRegistered = false;
@@ -54,7 +55,12 @@ namespace Beamable.Examples.Integrations.Steamworks
             return promise;
         }
 
-        
+        public Promise<string> GenerateLoginRequest()
+        {
+            return null;
+        }
+
+
         Promise<SteamProductsResponse> ISteamService.GetProducts()
         {
             if (!SteamManager.Initialized)
