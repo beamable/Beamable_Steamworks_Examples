@@ -12,6 +12,7 @@ namespace Beamable.Examples.Integrations.Steamworks
     /// Service for <see cref="Steamworks"/>.
     /// </summary>
     public class SteamworksService : ISteamService
+    {
  
         //  Fields  ---------------------------------------
         private bool _transactionRegistered = false;
@@ -37,13 +38,10 @@ namespace Beamable.Examples.Integrations.Steamworks
                     .ToArray();
                 string ticket = BitConverter.ToString(usedBytes).Replace("-", string.Empty);
 
-                Beamable.API.Instance.FlatMap(beamable =>
-                    {
-                        return beamable.Requester.Request<Beamable.Common.Api.EmptyResponse>(
-                            Beamable.Common.Api.Method.POST,
-                            $"/basic/payments/steam/auth",
-                            new SteamTicketRequest(ticket));
-                    })
+                var request = BeamContext.Default.Requester.Request<Beamable.Common.Api.EmptyResponse>(
+                        Beamable.Common.Api.Method.POST,
+                        $"/basic/payments/steam/auth",
+                        new SteamTicketRequest(ticket))
                     .Then(f => promise.CompleteSuccess(PromiseBase.Unit))
                     .Error(ex => promise.CompleteError(ex));
             });
@@ -54,7 +52,12 @@ namespace Beamable.Examples.Integrations.Steamworks
             return promise;
         }
 
-        
+        public Promise<string> GenerateLoginRequest()
+        {
+            return null;
+        }
+
+
         Promise<SteamProductsResponse> ISteamService.GetProducts()
         {
             if (!SteamManager.Initialized)
@@ -65,12 +68,9 @@ namespace Beamable.Examples.Integrations.Steamworks
             }
 
             long steamID = (long) SteamUser.GetSteamID().m_SteamID;
-            return Beamable.API.Instance.FlatMap(beamable =>
-            {
-                return beamable.Requester.Request<SteamProductsResponse>(
-                    Beamable.Common.Api.Method.GET,
-                    $"/basic/payments/steam/products?steamId={steamID}");
-            });
+            return BeamContext.Default.Requester.Request<SteamProductsResponse>(
+                Beamable.Common.Api.Method.GET,
+                $"/basic/payments/steam/products?steamId={steamID}");
         }
 
         

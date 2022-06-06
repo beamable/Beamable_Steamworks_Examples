@@ -23,8 +23,9 @@ namespace Beamable.Examples.Integrations.Steamworks
         //  Methods  --------------------------------------
         private async void SetupBeamable()
         {
-            var beamableAPI = await Beamable.API.Instance;
-            Debug.Log($"beamableAPI.User.id = {beamableAPI.User.id}");
+            var beamContext = BeamContext.Default;
+            await beamContext.OnReady;
+            Debug.Log($"beamContext.PlayerId = {beamContext.PlayerId}");
        
             if(SteamManager.Initialized) 
             {
